@@ -7,7 +7,7 @@ import logo from '../../assets/images/logo.png';
 const Header: React.FunctionComponent = () => {
   return (
     <div className='header'>
-      <img src={logo} height='36' alt='Ratan One'/>
+      <img className='header-icon' src={logo} alt='Ratan One' />
       <div className='header-nav'>
         <NavLink to='/query' className='link' activeClassName='active'>Trade Query</NavLink>
         <NavLink to='/exceptions' className='link' activeClassName='active'>Exceptions</NavLink>
