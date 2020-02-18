@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import './header.scss';
+import './header.less';
 import logo from '../../assets/images/logo.png';
 
 const Header: React.FunctionComponent = () => {

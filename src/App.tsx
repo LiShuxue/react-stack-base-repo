@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import "./App.scss";
+import "./App.less";
 
 import TradeQuery from "./pages/tradeQuery";
 import Exceptions from "./pages/exceptions";
