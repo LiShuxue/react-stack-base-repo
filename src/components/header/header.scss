@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  flex: 0 0 48px;
+  border-bottom: 5px solid #000;
+  box-sizing: border-box;
+}
+.header-nav {
+  margin-left: 30px;
+  .link {
+    display: inline-block;
+    height: 43px;
+    line-height: 45px;
+    padding: 0 10px;
+    color: #999;
+    font-size: 12px;
+    text-decoration: none;
+    &:hover {
+      color: #ccc;
+    }
+    &.active {
+      background: #111;
+    }
+  }
+}
