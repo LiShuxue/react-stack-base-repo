@@ -1,19 +1,18 @@
-import React from "react";
+import React from 'react';
 import { connect } from 'react-redux';
-import actionCreators from '../../store/actions'
+import actionCreators from '../../store/actions';
 
 const Rules: React.FunctionComponent = (props: any) => {
   const { stateA, stateB, actionCreatorA, asyncActionCreatorB } = props;
   const buttonAction2 = () => {
-    // can do more thing 
-    asyncActionCreatorB('async changed')
-  }
-  
+    // can do more thing
+    asyncActionCreatorB('async changed');
+  };
+
   return (
     <div>
       rules
       <hr />
-
       <button onClick={() => actionCreatorA('changed')}>click this button to change the stateA</button>
       <br />
       stateA: {stateA}
@@ -30,12 +29,9 @@ const mapStateToProps = (state: any) => {
   return {
     stateA,
     stateB
-  }
-}
+  };
+};
 
 const mapDispatchToProps = actionCreators;
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Rules);
+export default connect(mapStateToProps, mapDispatchToProps)(Rules);

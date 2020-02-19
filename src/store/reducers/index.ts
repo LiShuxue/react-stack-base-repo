@@ -7,6 +7,6 @@ import { handleActionB } from './moduleBReducer';
 const reducer = combineReducers({
   stateA: handleActionA,
   stateB: handleActionB
-})
+});
 
 export default reducer;

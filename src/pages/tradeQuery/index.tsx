@@ -1,41 +1,41 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { Button } from "antd";
+import { Button } from 'antd';
 
-import { AgGridReact } from "ag-grid-react";
-import "ag-grid-community/dist/styles/ag-grid.css";
-import "ag-grid-community/dist/styles/ag-theme-balham.css";
+import { AgGridReact } from 'ag-grid-react';
+import 'ag-grid-community/dist/styles/ag-grid.css';
+import 'ag-grid-community/dist/styles/ag-theme-balham.css';
 import 'ag-grid-enterprise';
 
 const TradeQuery: React.FunctionComponent = () => {
   const [columnDefs] = useState([
     {
-      headerName: "Make",
-      field: "make"
+      headerName: 'Make',
+      field: 'make'
     },
     {
-      headerName: "Model",
-      field: "model"
+      headerName: 'Model',
+      field: 'model'
     },
     {
-      headerName: "Price",
-      field: "price"
+      headerName: 'Price',
+      field: 'price'
     }
   ]);
   const [rowData] = useState([
     {
-      make: "Toyota",
-      model: "Celica",
+      make: 'Toyota',
+      model: 'Celica',
       price: 35000
     },
     {
-      make: "Ford",
-      model: "Mondeo",
+      make: 'Ford',
+      model: 'Mondeo',
       price: 32000
     },
     {
-      make: "Porsche",
-      model: "Boxter",
+      make: 'Porsche',
+      model: 'Boxter',
       price: 72000
     }
   ]);
@@ -49,7 +49,7 @@ const TradeQuery: React.FunctionComponent = () => {
       <hr />
 
       {/* ag-grid works well */}
-      <div className="ag-theme-balham" style={{height: '150px', width: '650px'}}>
+      <div className="ag-theme-balham" style={{ height: '150px', width: '650px' }}>
         <AgGridReact columnDefs={columnDefs} rowData={rowData} />
       </div>
     </div>

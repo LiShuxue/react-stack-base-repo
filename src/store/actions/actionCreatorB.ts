@@ -2,8 +2,8 @@ import * as types from '../actionTypes';
 import { Dispatch } from 'redux';
 
 export interface InterfaceActionB {
-  type: string,
-  text: string
+  type: string;
+  text: string;
 }
 
 export const asyncActionCreatorB = (actionDetail: string) => {
@@ -17,5 +17,5 @@ export const asyncActionCreatorB = (actionDetail: string) => {
         text: actionDetail
       });
     }, 1000);
-  }
-}
+  };
+};

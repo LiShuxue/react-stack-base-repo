@@ -4,4 +4,4 @@ import { asyncActionCreatorB } from './actionCreatorB';
 export default {
   actionCreatorA,
   asyncActionCreatorB
-}
+};
