@@ -1,0 +1,9 @@
+# compiled output
+/build/
+/dist/
+
+# dependencies
+/node_modules/
+
+# test
+/coverage/
