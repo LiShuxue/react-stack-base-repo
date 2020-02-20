@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-
 import { Button } from 'antd';
-
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-balham.css';
@@ -43,6 +41,7 @@ const TradeQuery: React.FunctionComponent = () => {
   return (
     <div>
       <h1>TradeQuery</h1>
+      <hr />
       {/* primary style already be override by styles/override-antd.less */}
       <Button type="primary">Button</Button>
 

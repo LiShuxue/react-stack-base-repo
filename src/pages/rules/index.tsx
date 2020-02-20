@@ -11,7 +11,7 @@ const Rules: React.FunctionComponent = (props: any) => {
 
   return (
     <div>
-      rules
+      <h1>Rules</h1>
       <hr />
       <button onClick={() => actionCreatorA('changed')}>click this button to change the stateA</button>
       <br />
