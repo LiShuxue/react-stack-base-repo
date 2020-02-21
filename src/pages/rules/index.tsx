@@ -15,11 +15,11 @@ const Rules: React.FunctionComponent = (props: any) => {
       <hr />
       <button onClick={() => actionCreatorA('changed')}>click this button to change the stateA</button>
       <br />
-      stateA: {stateA}
+      <h1>stateA: {stateA}</h1>
       <br />
       <button onClick={buttonAction2}>click this button to async change the stateB</button>
       <br />
-      stateB: {stateB}
+      <h1>stateB: {stateB}</h1>
     </div>
   );
 };
