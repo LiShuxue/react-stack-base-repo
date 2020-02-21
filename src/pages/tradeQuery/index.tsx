@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from 'antd';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
-import 'ag-grid-community/dist/styles/ag-theme-balham.css';
+import 'ag-grid-community/dist/styles/ag-theme-balham-dark.css';
 import 'ag-grid-enterprise';
 
 const TradeQuery: React.FunctionComponent = () => {
@@ -42,13 +42,14 @@ const TradeQuery: React.FunctionComponent = () => {
     <div>
       <h1>TradeQuery</h1>
       <hr />
-      {/* primary style already be override by styles/override-antd.less */}
-      <Button type="primary">Button</Button>
-
+      {/* button style already be override by styles/override-antd.less */}
+      <Button>default Button</Button>
+      <br />
+      <br />
+      <Button disabled>disabled Button</Button>
       <hr />
-
       {/* ag-grid works well */}
-      <div className="ag-theme-balham" style={{ height: '150px', width: '650px' }}>
+      <div className="ag-theme-balham-dark" style={{ height: '150px', width: '650px' }}>
         <AgGridReact columnDefs={columnDefs} rowData={rowData} />
       </div>
     </div>
