@@ -108,6 +108,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "test-all": "node scripts/test.js --watchAll=false --coverage",
+    "lint": "concurrently \"yarn lint-js\" \"yarn lint-css\"",
+    "lint-fix": "concurrently \"yarn lint-js-fix\" \"yarn lint-css-fix\"",
     "lint-js": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx .",
     "lint-js-fix": "eslint --fix --ext .js --ext .jsx --ext .ts --ext .tsx .",
     "lint-css": "stylelint src/**/*.css src/**/*.less",
