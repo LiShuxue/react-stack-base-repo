@@ -1,0 +1,1216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`click "Exceptions" link should show "Exceptions" page 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="header"
+    >
+      <img
+        alt="Ratan One"
+        class="header-icon"
+        src="logo.png"
+      />
+      <div
+        class="header-nav"
+      >
+        <a
+          class="link"
+          href="/query"
+        >
+          Trade Query
+        </a>
+        <a
+          aria-current="page"
+          class="link active"
+          href="/exceptions"
+        >
+          Exceptions
+        </a>
+        <a
+          class="link"
+          href="/rules"
+        >
+          Rules
+        </a>
+      </div>
+    </div>
+    <div>
+      <h1>
+        Exceptions
+      </h1>
+      <hr />
+      <button>
+        testGetApi
+      </button>
+       
+      <br />
+      <button>
+        testPostApi
+      </button>
+       
+      <br />
+      <h2>
+        Open Chrome developer tool to inspect your request, and you can also see the response in the console
+      </h2>
+      <br />
+      <h2>
+        About websocket relative, wait 20s, server will push data and we will show it in console
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`click "Rules" link should show "Rules" page 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="header"
+    >
+      <img
+        alt="Ratan One"
+        class="header-icon"
+        src="logo.png"
+      />
+      <div
+        class="header-nav"
+      >
+        <a
+          class="link"
+          href="/query"
+        >
+          Trade Query
+        </a>
+        <a
+          class="link"
+          href="/exceptions"
+        >
+          Exceptions
+        </a>
+        <a
+          aria-current="page"
+          class="link active"
+          href="/rules"
+        >
+          Rules
+        </a>
+      </div>
+    </div>
+    <div>
+      <h1>
+        Rules
+      </h1>
+      <hr />
+      <button>
+        click this button to change the stateA
+      </button>
+      <br />
+      <h1>
+        stateA: this is preload A
+      </h1>
+      <br />
+      <button>
+        click this button to async change the stateB
+      </button>
+      <br />
+      <h1>
+        stateB: this is preload B
+      </h1>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`click "Trade Query" link should show "Trade Query" page 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="header"
+    >
+      <img
+        alt="Ratan One"
+        class="header-icon"
+        src="logo.png"
+      />
+      <div
+        class="header-nav"
+      >
+        <a
+          aria-current="page"
+          class="link active"
+          href="/query"
+        >
+          Trade Query
+        </a>
+        <a
+          class="link"
+          href="/exceptions"
+        >
+          Exceptions
+        </a>
+        <a
+          class="link"
+          href="/rules"
+        >
+          Rules
+        </a>
+      </div>
+    </div>
+    <div>
+      <h1>
+        TradeQuery
+      </h1>
+      <hr />
+      <button
+        class="ant-btn"
+        type="button"
+      >
+        <span>
+          default Button
+        </span>
+      </button>
+      <br />
+      <br />
+      <button
+        class="ant-btn"
+        disabled=""
+        type="button"
+      >
+        <span>
+          disabled Button
+        </span>
+      </button>
+      <hr />
+      <div
+        class="ag-theme-balham-dark"
+        data-testid="datalist"
+        style="height: 150px; width: 650px;"
+      >
+        <div
+          style="height: 100%;"
+        >
+          <div
+            class="ag-root-wrapper ag-layout-normal ag-ltr"
+          >
+            
+                
+            <!--AG-GRID-HEADER-DROP-ZONES-->
+            <div>
+              <div
+                class="ag-column-drop ag-unselectable ag-column-drop-horizontal ag-column-drop-row-group ag-hidden"
+              >
+                <div>
+                  <span
+                    class="ag-icon ag-icon-group ag-column-drop-icon ag-faded"
+                    unselectable="on"
+                  />
+                </div>
+                <span
+                  class="ag-column-drop-empty-message"
+                >
+                  Drag here to set row groups
+                </span>
+                <div
+                  class="ag-column-drop-list"
+                />
+              </div>
+              <div
+                class="ag-column-drop ag-unselectable ag-column-drop-horizontal ag-column-drop-pivot ag-hidden"
+              >
+                <div>
+                  <span
+                    class="ag-icon ag-icon-pivot ag-column-drop-icon ag-faded"
+                    unselectable="on"
+                  />
+                </div>
+                <span
+                  class="ag-column-drop-empty-message"
+                >
+                  Drag here to set column labels
+                </span>
+                <div
+                  class="ag-column-drop-list"
+                />
+              </div>
+            </div>
+            
+                
+            <div
+              class="ag-root-wrapper-body ag-layout-normal"
+              ref="rootWrapperBody"
+            >
+              
+                    
+              <!--AG-GRID-COMP-->
+              <div
+                aria-colcount="3"
+                aria-rowcount="4"
+                class="ag-root ag-unselectable ag-layout-normal"
+                ref="gridPanel"
+                role="grid"
+                unselectable="on"
+              >
+                
+        
+                <!--AG-HEADER-ROOT-->
+                <div
+                  class="ag-header ag-pivot-off"
+                  ref="headerRoot"
+                  role="presentation"
+                  style="height: 33px; min-height: 33px;"
+                  unselectable="on"
+                >
+                  
+            
+                  <div
+                    class="ag-pinned-left-header ag-hidden"
+                    ref="ePinnedLeftHeader"
+                    role="presentation"
+                    style="width: 0px; max-width: 0px; min-width: 0px;"
+                  >
+                    <div
+                      aria-rowindex="1"
+                      class="ag-header-row"
+                      role="row"
+                      style="top: 0px; height: 32px; width: 0px;"
+                    />
+                  </div>
+                  
+            
+                  <div
+                    class="ag-header-viewport"
+                    ref="eHeaderViewport"
+                    role="presentation"
+                  >
+                    
+                
+                    <div
+                      class="ag-header-container"
+                      ref="eHeaderContainer"
+                      role="rowgroup"
+                      style="width: 600px;"
+                    >
+                      <div
+                        aria-rowindex="1"
+                        class="ag-header-row"
+                        role="row"
+                        style="top: 0px; height: 32px; width: 600px;"
+                      >
+                        <div
+                          class="ag-header-cell"
+                          col-id="make"
+                          role="presentation"
+                          style="width: 200px; left: 0px;"
+                          unselectable="on"
+                        >
+                              
+                          <!--AG-CHECKBOX-->
+                          <div
+                            class="ag-header-select-all ag-labeled ag-label-align-right ag-checkbox ag-hidden"
+                            ref="cbSelectAll"
+                            role="presentation"
+                          >
+                            
+            
+                            <label
+                              class="ag-hidden"
+                              ref="eLabel"
+                            />
+                            
+            
+                            <div
+                              class="ag-wrapper ag-input-wrapper"
+                              ref="eWrapper"
+                              role="presentation"
+                            >
+                              
+                
+                              <input
+                                class="ag-hidden"
+                                ref="eInput"
+                                type="checkbox"
+                              />
+                              
+            
+                              <div>
+                                <span
+                                  class="ag-icon ag-icon-checkbox-unchecked"
+                                  unselectable="on"
+                                />
+                              </div>
+                            </div>
+                            
+        
+                          </div>
+                          <div
+                            class="ag-cell-label-container"
+                            role="presentation"
+                          >
+                              
+                            <span
+                              aria-hidden="true"
+                              class="ag-header-icon ag-header-cell-menu-button"
+                              ref="eMenu"
+                              style="opacity: 0; transition: opacity 0.2s, border 0.2s;"
+                            >
+                              <span
+                                class="ag-icon ag-icon-menu"
+                                unselectable="on"
+                              />
+                            </span>
+                              
+                            <div
+                              class="ag-header-cell-label"
+                              ref="eLabel"
+                              role="presentation"
+                              unselectable="on"
+                            >
+                                  
+                              <span
+                                aria-colindex="1"
+                                class="ag-header-cell-text"
+                                ref="eText"
+                                role="columnheader"
+                                unselectable="on"
+                              >
+                                Make
+                              </span>
+                                  
+                              <span
+                                aria-hidden="true"
+                                class="ag-header-icon ag-filter-icon ag-hidden"
+                                ref="eFilter"
+                              >
+                                <span
+                                  class="ag-icon ag-icon-filter"
+                                  unselectable="on"
+                                />
+                              </span>
+                                                
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="ag-header-cell"
+                          col-id="model"
+                          role="presentation"
+                          style="width: 200px; left: 200px;"
+                          unselectable="on"
+                        >
+                              
+                          <!--AG-CHECKBOX-->
+                          <div
+                            class="ag-header-select-all ag-labeled ag-label-align-right ag-checkbox ag-hidden"
+                            ref="cbSelectAll"
+                            role="presentation"
+                          >
+                            
+            
+                            <label
+                              class="ag-hidden"
+                              ref="eLabel"
+                            />
+                            
+            
+                            <div
+                              class="ag-wrapper ag-input-wrapper"
+                              ref="eWrapper"
+                              role="presentation"
+                            >
+                              
+                
+                              <input
+                                class="ag-hidden"
+                                ref="eInput"
+                                type="checkbox"
+                              />
+                              
+            
+                              <div>
+                                <span
+                                  class="ag-icon ag-icon-checkbox-unchecked"
+                                  unselectable="on"
+                                />
+                              </div>
+                            </div>
+                            
+        
+                          </div>
+                          <div
+                            class="ag-cell-label-container"
+                            role="presentation"
+                          >
+                              
+                            <span
+                              aria-hidden="true"
+                              class="ag-header-icon ag-header-cell-menu-button"
+                              ref="eMenu"
+                              style="opacity: 0; transition: opacity 0.2s, border 0.2s;"
+                            >
+                              <span
+                                class="ag-icon ag-icon-menu"
+                                unselectable="on"
+                              />
+                            </span>
+                              
+                            <div
+                              class="ag-header-cell-label"
+                              ref="eLabel"
+                              role="presentation"
+                              unselectable="on"
+                            >
+                                  
+                              <span
+                                aria-colindex="2"
+                                class="ag-header-cell-text"
+                                ref="eText"
+                                role="columnheader"
+                                unselectable="on"
+                              >
+                                Model
+                              </span>
+                                  
+                              <span
+                                aria-hidden="true"
+                                class="ag-header-icon ag-filter-icon ag-hidden"
+                                ref="eFilter"
+                              >
+                                <span
+                                  class="ag-icon ag-icon-filter"
+                                  unselectable="on"
+                                />
+                              </span>
+                                                
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+            
+                  </div>
+                  
+            
+                  <div
+                    class="ag-pinned-right-header ag-hidden"
+                    ref="ePinnedRightHeader"
+                    role="presentation"
+                    style="width: 0px; max-width: 0px; min-width: 0px;"
+                  >
+                    <div
+                      aria-rowindex="1"
+                      class="ag-header-row"
+                      role="row"
+                      style="top: 0px; height: 32px; width: 0px;"
+                    />
+                  </div>
+                  
+        
+                </div>
+                
+        
+                <div
+                  class="ag-floating-top"
+                  ref="eTop"
+                  role="presentation"
+                  style="min-height: 0px; height: 0px; display: none; overflow-y: hidden;"
+                  unselectable="on"
+                >
+                  
+            
+                  <div
+                    class="ag-pinned-left-floating-top ag-hidden"
+                    ref="eLeftTop"
+                    role="presentation"
+                    unselectable="on"
+                  />
+                  
+            
+                  <div
+                    class="ag-floating-top-viewport"
+                    ref="eTopViewport"
+                    role="presentation"
+                    unselectable="on"
+                  >
+                    
+                
+                    <div
+                      class="ag-floating-top-container"
+                      ref="eTopContainer"
+                      role="presentation"
+                      style="width: 600px;"
+                      unselectable="on"
+                    />
+                    
+            
+                  </div>
+                  
+            
+                  <div
+                    class="ag-pinned-right-floating-top ag-hidden"
+                    ref="eRightTop"
+                    role="presentation"
+                    unselectable="on"
+                  />
+                  
+            
+                  <div
+                    class="ag-floating-top-full-width-container ag-hidden"
+                    ref="eTopFullWidthContainer"
+                    role="presentation"
+                    unselectable="on"
+                  />
+                  
+        
+                </div>
+                
+        
+                <div
+                  class="ag-body-viewport ag-layout-normal ag-row-no-animation"
+                  ref="eBodyViewport"
+                  role="presentation"
+                  unselectable="on"
+                >
+                  
+            
+                  <div
+                    class="ag-pinned-left-cols-container ag-hidden"
+                    ref="eLeftContainer"
+                    role="presentation"
+                    style="height: 84px;"
+                    unselectable="on"
+                  >
+                    <div
+                      aria-rowindex="2"
+                      class="ag-row ag-row-no-focus ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-first"
+                      comp-id="81"
+                      role="row"
+                      row-id="0"
+                      row-index="0"
+                      style="height: 28px; transform: translateY(0px); "
+                    />
+                    <div
+                      aria-rowindex="3"
+                      class="ag-row ag-row-no-focus ag-row-odd ag-row-level-0 ag-row-position-absolute"
+                      comp-id="84"
+                      role="row"
+                      row-id="1"
+                      row-index="1"
+                      style="height: 28px; transform: translateY(28px); "
+                    />
+                    <div
+                      aria-rowindex="4"
+                      class="ag-row ag-row-no-focus ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-last"
+                      comp-id="87"
+                      role="row"
+                      row-id="2"
+                      row-index="2"
+                      style="height: 28px; transform: translateY(56px); "
+                    />
+                  </div>
+                  
+            
+                  <div
+                    class="ag-center-cols-clipper"
+                    ref="eCenterColsClipper"
+                    role="presentation"
+                    style="height: 84px;"
+                    unselectable="on"
+                  >
+                    
+                
+                    <div
+                      class="ag-center-cols-viewport"
+                      ref="eCenterViewport"
+                      role="presentation"
+                      unselectable="on"
+                    >
+                      
+                    
+                      <div
+                        class="ag-center-cols-container"
+                        ref="eCenterContainer"
+                        role="rowgroup"
+                        style="width: 600px; height: 84px;"
+                        unselectable="on"
+                      >
+                        <div
+                          aria-rowindex="2"
+                          class="ag-row ag-row-no-focus ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-first"
+                          comp-id="81"
+                          role="row"
+                          row-id="0"
+                          row-index="0"
+                          style="height: 28px; transform: translateY(0px); "
+                        >
+                          <div
+                            aria-colindex="1"
+                            class="ag-cell ag-cell-not-inline-editing ag-cell-with-height ag-cell-value"
+                            col-id="make"
+                            comp-id="82"
+                            role="gridcell"
+                            style="width: 200px; left: 0px;  "
+                            tabindex="-1"
+                            unselectable="on"
+                          >
+                            Toyota
+                          </div>
+                          <div
+                            aria-colindex="2"
+                            class="ag-cell ag-cell-not-inline-editing ag-cell-with-height ag-cell-value"
+                            col-id="model"
+                            comp-id="83"
+                            role="gridcell"
+                            style="width: 200px; left: 200px;  "
+                            tabindex="-1"
+                            unselectable="on"
+                          >
+                            Celica
+                          </div>
+                        </div>
+                        <div
+                          aria-rowindex="3"
+                          class="ag-row ag-row-no-focus ag-row-odd ag-row-level-0 ag-row-position-absolute"
+                          comp-id="84"
+                          role="row"
+                          row-id="1"
+                          row-index="1"
+                          style="height: 28px; transform: translateY(28px); "
+                        >
+                          <div
+                            aria-colindex="1"
+                            class="ag-cell ag-cell-not-inline-editing ag-cell-with-height ag-cell-value"
+                            col-id="make"
+                            comp-id="85"
+                            role="gridcell"
+                            style="width: 200px; left: 0px;  "
+                            tabindex="-1"
+                            unselectable="on"
+                          >
+                            Ford
+                          </div>
+                          <div
+                            aria-colindex="2"
+                            class="ag-cell ag-cell-not-inline-editing ag-cell-with-height ag-cell-value"
+                            col-id="model"
+                            comp-id="86"
+                            role="gridcell"
+                            style="width: 200px; left: 200px;  "
+                            tabindex="-1"
+                            unselectable="on"
+                          >
+                            Mondeo
+                          </div>
+                        </div>
+                        <div
+                          aria-rowindex="4"
+                          class="ag-row ag-row-no-focus ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-last"
+                          comp-id="87"
+                          role="row"
+                          row-id="2"
+                          row-index="2"
+                          style="height: 28px; transform: translateY(56px); "
+                        >
+                          <div
+                            aria-colindex="1"
+                            class="ag-cell ag-cell-not-inline-editing ag-cell-with-height ag-cell-value"
+                            col-id="make"
+                            comp-id="88"
+                            role="gridcell"
+                            style="width: 200px; left: 0px;  "
+                            tabindex="-1"
+                            unselectable="on"
+                          >
+                            Porsche
+                          </div>
+                          <div
+                            aria-colindex="2"
+                            class="ag-cell ag-cell-not-inline-editing ag-cell-with-height ag-cell-value"
+                            col-id="model"
+                            comp-id="89"
+                            role="gridcell"
+                            style="width: 200px; left: 200px;  "
+                            tabindex="-1"
+                            unselectable="on"
+                          >
+                            Boxter
+                          </div>
+                        </div>
+                      </div>
+                      
+                
+                    </div>
+                    
+            
+                  </div>
+                  
+            
+                  <div
+                    class="ag-pinned-right-cols-container ag-hidden"
+                    ref="eRightContainer"
+                    role="presentation"
+                    style="height: 84px;"
+                    unselectable="on"
+                  >
+                    <div
+                      aria-rowindex="2"
+                      class="ag-row ag-row-no-focus ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-first"
+                      comp-id="81"
+                      role="row"
+                      row-id="0"
+                      row-index="0"
+                      style="height: 28px; transform: translateY(0px); "
+                    />
+                    <div
+                      aria-rowindex="3"
+                      class="ag-row ag-row-no-focus ag-row-odd ag-row-level-0 ag-row-position-absolute"
+                      comp-id="84"
+                      role="row"
+                      row-id="1"
+                      row-index="1"
+                      style="height: 28px; transform: translateY(28px); "
+                    />
+                    <div
+                      aria-rowindex="4"
+                      class="ag-row ag-row-no-focus ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-last"
+                      comp-id="87"
+                      role="row"
+                      row-id="2"
+                      row-index="2"
+                      style="height: 28px; transform: translateY(56px); "
+                    />
+                  </div>
+                  
+            
+                  <div
+                    class="ag-full-width-container"
+                    ref="eFullWidthContainer"
+                    role="presentation"
+                    style="height: 84px;"
+                    unselectable="on"
+                  />
+                  
+        
+                </div>
+                
+        
+                <div
+                  class="ag-floating-bottom"
+                  ref="eBottom"
+                  role="presentation"
+                  style="min-height: 0px; height: 0px; display: none; overflow-y: hidden;"
+                  unselectable="on"
+                >
+                  
+            
+                  <div
+                    class="ag-pinned-left-floating-bottom ag-hidden"
+                    ref="eLeftBottom"
+                    role="presentation"
+                    unselectable="on"
+                  />
+                  
+            
+                  <div
+                    class="ag-floating-bottom-viewport"
+                    ref="eBottomViewport"
+                    role="presentation"
+                    unselectable="on"
+                  >
+                    
+                
+                    <div
+                      class="ag-floating-bottom-container"
+                      ref="eBottomContainer"
+                      role="presentation"
+                      style="width: 600px;"
+                      unselectable="on"
+                    />
+                    
+            
+                  </div>
+                  
+            
+                  <div
+                    class="ag-pinned-right-floating-bottom ag-hidden"
+                    ref="eRightBottom"
+                    role="presentation"
+                    unselectable="on"
+                  />
+                  
+            
+                  <div
+                    class="ag-floating-bottom-full-width-container ag-hidden"
+                    ref="eBottomFullWidthContainer"
+                    role="presentation"
+                    unselectable="on"
+                  />
+                  
+        
+                </div>
+                
+        
+                <div
+                  aria-hidden="true"
+                  class="ag-body-horizontal-scroll"
+                  ref="eHorizontalScrollBody"
+                  style="height: 0px; max-height: 0px; min-height: 0px;"
+                >
+                  
+            
+                  <div
+                    class="ag-horizontal-left-spacer ag-scroller-corner"
+                    ref="eHorizontalLeftSpacer"
+                    style="width: 0px; max-width: 0px; min-width: 0px;"
+                  />
+                  
+            
+                  <div
+                    class="ag-body-horizontal-scroll-viewport"
+                    ref="eBodyHorizontalScrollViewport"
+                    style="height: 0px; max-height: 0px; min-height: 0px;"
+                  >
+                    
+                
+                    <div
+                      class="ag-body-horizontal-scroll-container"
+                      ref="eBodyHorizontalScrollContainer"
+                      style="width: 600px; height: 0px; max-height: 0px; min-height: 0px;"
+                    />
+                    
+            
+                  </div>
+                  
+            
+                  <div
+                    class="ag-horizontal-right-spacer ag-scroller-corner"
+                    ref="eHorizontalRightSpacer"
+                    style="width: 0px; max-width: 0px; min-width: 0px;"
+                  />
+                  
+        
+                </div>
+                
+        
+                <!--AG-OVERLAY-WRAPPER-->
+                <div
+                  aria-hidden="true"
+                  class="ag-overlay ag-hidden"
+                  ref="overlayWrapper"
+                >
+                  
+            
+                  <div
+                    class="ag-overlay-panel"
+                  >
+                    
+                
+                    <div
+                      class="ag-overlay-wrapper ag-layout-normal"
+                      ref="eOverlayWrapper"
+                    />
+                    
+            
+                  </div>
+                  
+        
+                </div>
+                
+    
+              </div>
+                                  
+                    
+              <!--AG-SIDE-BAR-->
+              <div
+                class="ag-side-bar ag-unselectable ag-hidden"
+                ref="sideBar"
+              >
+                
+              
+                <!--AG-SIDE-BAR-BUTTONS-->
+                <div
+                  class="ag-side-buttons"
+                  ref="sideBarButtons"
+                />
+              </div>
+              
+                
+            </div>
+            
+                
+            <!--AG-STATUS-BAR-->
+            <div
+              class="ag-status-bar"
+              ref="statusBar"
+            >
+              
+        
+              <div
+                class="ag-status-bar-left"
+                ref="eStatusBarLeft"
+              />
+              
+        
+              <div
+                class="ag-status-bar-center"
+                ref="eStatusBarCenter"
+              />
+              
+        
+              <div
+                class="ag-status-bar-right"
+                ref="eStatusBarRight"
+              />
+              
+    
+            </div>
+            
+                
+            <!--AG-PAGINATION-->
+            <div
+              class="ag-paging-panel ag-unselectable ag-hidden"
+            >
+              
+                
+              <span
+                class="ag-paging-row-summary-panel"
+                ref="eSummaryPanel"
+              >
+                
+                    
+                <span
+                  ref="lbFirstRowOnPage"
+                />
+                 to 
+                <span
+                  ref="lbLastRowOnPage"
+                />
+                 of 
+                <span
+                  ref="lbRecordCount"
+                />
+                
+                
+              </span>
+              
+                
+              <span
+                class="ag-paging-page-summary-panel"
+              >
+                
+                    
+                <div
+                  class="ag-paging-button"
+                  ref="btFirst"
+                >
+                  <span
+                    class="ag-icon ag-icon-first"
+                    unselectable="on"
+                  />
+                  
+                        
+                  <button
+                    type="button"
+                  >
+                    First
+                  </button>
+                  
+                    
+                </div>
+                
+                    
+                <div
+                  class="ag-paging-button"
+                  ref="btPrevious"
+                >
+                  <span
+                    class="ag-icon ag-icon-previous"
+                    unselectable="on"
+                  />
+                  
+                        
+                  <button
+                    type="button"
+                  >
+                    Previous
+                  </button>
+                  
+                    
+                </div>
+                
+                    Page 
+                <span
+                  ref="lbCurrent"
+                />
+                 of 
+                <span
+                  ref="lbTotal"
+                />
+                
+                    
+                <div
+                  class="ag-paging-button"
+                  ref="btNext"
+                >
+                  <span
+                    class="ag-icon ag-icon-next"
+                    unselectable="on"
+                  />
+                  
+                        
+                  <button
+                    type="button"
+                  >
+                    Next
+                  </button>
+                  
+                    
+                </div>
+                
+                    
+                <div
+                  class="ag-paging-button"
+                  ref="btLast"
+                >
+                  <span
+                    class="ag-icon ag-icon-last"
+                    unselectable="on"
+                  />
+                  
+                        
+                  <button
+                    type="button"
+                  >
+                    Last
+                  </button>
+                  
+                    
+                </div>
+                
+                
+              </span>
+              
+            
+            </div>
+            
+                
+            <!--AG-WATERMARK-->
+            <div
+              class="ag-watermark ag-hidden"
+            >
+              
+                    
+              <div
+                class="ag-watermark-text"
+                ref="eLicenseTextRef"
+              />
+              
+               
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`should render App correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="header"
+  >
+    <img
+      alt="Ratan One"
+      className="header-icon"
+      src="logo.png"
+    />
+    <div
+      className="header-nav"
+    >
+      <a
+        aria-current="page"
+        className="link active"
+        href="/query"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Trade Query
+      </a>
+      <a
+        aria-current={null}
+        className="link"
+        href="/exceptions"
+        onClick={[Function]}
+      >
+        Exceptions
+      </a>
+      <a
+        aria-current={null}
+        className="link"
+        href="/rules"
+        onClick={[Function]}
+      >
+        Rules
+      </a>
+    </div>
+  </div>
+  <div>
+    <h1>
+      TradeQuery
+    </h1>
+    <hr />
+    <button
+      className="ant-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        default Button
+      </span>
+    </button>
+    <br />
+    <br />
+    <button
+      className="ant-btn"
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        disabled Button
+      </span>
+    </button>
+    <hr />
+    <div
+      className="ag-theme-balham-dark"
+      data-testid="datalist"
+      style={
+        Object {
+          "height": "150px",
+          "width": "650px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
