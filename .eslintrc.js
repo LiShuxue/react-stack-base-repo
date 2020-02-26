@@ -9,8 +9,7 @@ module.exports = {
   overrides: [{
     files: [
       'config/**/*.js',
-      'scripts/**/*.js',
-      'server/**/*.js'
+      'scripts/**/*.js'
     ],
     rules: {
       'strict': 'off'
