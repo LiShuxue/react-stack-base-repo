@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`click first button should change the stateA immediately 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -7,11 +7,11 @@
+      <button>
+        click this button to change the stateA
+      </button>
+      <br />
+      <h1>
+-       stateA: this is preload A
++       stateA: changed
+      </h1>
+      <br />
+      <button>
+        click this button to async change the stateB
+      </button>"
+`;
+
+exports[`click second button should change the stateB asynchronous" 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -15,9 +15,9 @@
+      <button>
+        click this button to async change the stateB
+      </button>
+      <br />
+      <h1>
+-       stateB: this is preload B
++       stateB: async changed
+      </h1>
+    </div>
+  </DocumentFragment>"
+`;
+
+exports[`should render Rules page correctly 1`] = `
+<div>
+  <h1>
+    Rules
+  </h1>
+  <hr />
+  <button
+    onClick={[Function]}
+  >
+    click this button to change the stateA
+  </button>
+  <br />
+  <h1>
+    stateA: 
+    this is preload A
+  </h1>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    click this button to async change the stateB
+  </button>
+  <br />
+  <h1>
+    stateB: 
+    this is preload B
+  </h1>
+</div>
+`;
