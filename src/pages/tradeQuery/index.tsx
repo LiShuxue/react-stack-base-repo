@@ -49,7 +49,7 @@ const TradeQuery: React.FunctionComponent = () => {
       <Button disabled>disabled Button</Button>
       <hr />
       {/* ag-grid works well */}
-      <div className="ag-theme-balham-dark" style={{ height: '150px', width: '650px' }}>
+      <div className="ag-theme-balham-dark" style={{ height: '150px', width: '650px' }} data-testid="datalist">
         <AgGridReact columnDefs={columnDefs} rowData={rowData} />
       </div>
     </div>

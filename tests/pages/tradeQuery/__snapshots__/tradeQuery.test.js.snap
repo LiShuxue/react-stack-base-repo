@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render TradeQuery page correctly 1`] = `
+<div>
+  <h1>
+    TradeQuery
+  </h1>
+  <hr />
+  <button
+    className="ant-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      default Button
+    </span>
+  </button>
+  <br />
+  <br />
+  <button
+    className="ant-btn"
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      disabled Button
+    </span>
+  </button>
+  <hr />
+  <div
+    className="ag-theme-balham-dark"
+    data-testid="datalist"
+    style={
+      Object {
+        "height": "150px",
+        "width": "650px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    />
+  </div>
+</div>
+`;
