@@ -1,21 +1,33 @@
 import * as types from '../actionTypes';
 import { Dispatch } from 'redux';
+import { testGetMethod } from 'src/http/api';
 
 export interface InterfaceActionB {
   type: string;
   text: string;
 }
 
-export const asyncActionCreatorB = (actionDetail: string) => {
-  // follow redux-thunk, do some async thing
-  return (dispatch: Dispatch, getState: Function) => {
-    console.log('Get the whole state before async dispatch');
+const requestSuccess = () => {
+  return {
+    type: types.REQUEST_SUCCESS,
+    text: 'request success'
+  };
+};
+const requestFailed = () => {
+  return {
+    type: types.REQUEST_FAILED,
+    text: 'request failed'
+  };
+};
+
+export const asyncActionCreatorB = () => {
+  return async (dispatch: Dispatch, getState: Function) => {
     console.log(getState());
-    setTimeout(() => {
-      dispatch({
-        type: types.ACTION_TYPE_B,
-        text: actionDetail
-      });
-    }, 1000);
+    try {
+      await testGetMethod();
+      dispatch(requestSuccess());
+    } catch (error) {
+      dispatch(requestFailed());
+    }
   };
 };

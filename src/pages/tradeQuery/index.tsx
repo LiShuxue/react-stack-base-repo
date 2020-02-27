@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-balham-dark.css';
-import 'ag-grid-enterprise';
+// import 'ag-grid-enterprise';
 
 const TradeQuery: React.FunctionComponent = () => {
   const [columnDefs] = useState([
