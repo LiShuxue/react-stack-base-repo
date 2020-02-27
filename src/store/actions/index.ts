@@ -1,7 +1,2 @@
-import { actionCreatorA } from './actionCreatorA';
-import { asyncActionCreatorB } from './actionCreatorB';
-
-export default {
-  actionCreatorA,
-  asyncActionCreatorB
-};
+export { actionCreatorA } from './actionCreatorA';
+export { asyncActionCreatorB } from './actionCreatorB';

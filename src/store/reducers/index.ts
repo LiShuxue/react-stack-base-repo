@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 
-import { handleActionA } from './moduleAReducer';
-import { handleActionB } from './moduleBReducer';
+import { reducerA } from './reducerA';
+import { reducerB } from './reducerB';
 
 // preload state object key must be same as reducer
 const reducer = combineReducers({
-  stateA: handleActionA,
-  stateB: handleActionB
+  stateA: reducerA,
+  stateB: reducerB
 });
 
 export default reducer;

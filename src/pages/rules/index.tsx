@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import actionCreators from '../../store/actions';
+import { actionCreatorA, asyncActionCreatorB } from '../../store/actions';
 
 export const Rules: React.FunctionComponent = (props: any) => {
   const { stateA, stateB, actionCreatorA, asyncActionCreatorB } = props;
@@ -32,6 +32,9 @@ const mapStateToProps = (state: any) => {
   };
 };
 
-const mapDispatchToProps = actionCreators;
+const mapDispatchToProps = {
+  actionCreatorA,
+  asyncActionCreatorB
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Rules);
