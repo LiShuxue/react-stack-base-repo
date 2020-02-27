@@ -1,14 +1,12 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import App from 'src/App';
 import store from 'src/store';
 
 test('should render App correctly', () => {
-  const testRenderer = renderer.create(<App />);
-  const dom = testRenderer.toJSON();
-  expect(dom).toMatchSnapshot();
+  const { asFragment } = render(<App />);
+  expect(asFragment()).toMatchSnapshot();
 });
 
 test('should have "Trade Query", "Exceptions", "Rules" link', () => {

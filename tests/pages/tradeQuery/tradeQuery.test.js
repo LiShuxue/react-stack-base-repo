@@ -1,12 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import renderer from 'react-test-renderer';
 import TradeQuery from 'src/pages/tradeQuery';
 
 test('should render TradeQuery page correctly', () => {
-  const testRenderer = renderer.create(<TradeQuery />);
-  const dom = testRenderer.toJSON();
-  expect(dom).toMatchSnapshot();
+  const { asFragment } = render(<TradeQuery />);
+  expect(asFragment()).toMatchSnapshot();
 });
 
 test('should have "default button" and "disabled button"', () => {

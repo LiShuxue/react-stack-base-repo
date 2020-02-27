@@ -1,41 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Header component correctly 1`] = `
-<div
-  className="header"
->
-  <img
-    alt="Ratan One"
-    className="header-icon"
-    src="logo.png"
-  />
+<DocumentFragment>
   <div
-    className="header-nav"
+    class="header"
   >
-    <a
-      aria-current={null}
-      className="link"
-      href="/query"
-      onClick={[Function]}
+    <img
+      alt="Ratan One"
+      class="header-icon"
+      src="logo.png"
+    />
+    <div
+      class="header-nav"
     >
-      Trade Query
-    </a>
-    <a
-      aria-current={null}
-      className="link"
-      href="/exceptions"
-      onClick={[Function]}
-    >
-      Exceptions
-    </a>
-    <a
-      aria-current={null}
-      className="link"
-      href="/rules"
-      onClick={[Function]}
-    >
-      Rules
-    </a>
+      <a
+        class="link"
+        href="/query"
+      >
+        Trade Query
+      </a>
+      <a
+        class="link"
+        href="/exceptions"
+      >
+        Exceptions
+      </a>
+      <a
+        class="link"
+        href="/rules"
+      >
+        Rules
+      </a>
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;

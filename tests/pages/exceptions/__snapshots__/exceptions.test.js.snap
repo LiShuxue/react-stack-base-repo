@@ -1,31 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Exceptions page correctly 1`] = `
-<div>
-  <h1>
-    Exceptions
-  </h1>
-  <hr />
-  <button
-    onClick={[Function]}
-  >
-    testGetApi
-  </button>
-   
-  <br />
-  <button
-    onClick={[Function]}
-  >
-    testPostApi
-  </button>
-   
-  <br />
-  <h2>
-    Open Chrome developer tool to inspect your request, and you can also see the response in the console
-  </h2>
-  <br />
-  <h2>
-    About websocket relative, wait 20s, server will push data and we will show it in console
-  </h2>
-</div>
+<DocumentFragment>
+  <div>
+    <h1>
+      Exceptions
+    </h1>
+    <hr />
+    <button>
+      testGetApi
+    </button>
+     
+    <br />
+    <button>
+      testPostApi
+    </button>
+     
+    <br />
+    <h2>
+      Open Chrome developer tool to inspect your request, and you can also see the response in the console
+    </h2>
+    <br />
+    <h2>
+      About websocket relative, wait 20s, server will push data and we will show it in console
+    </h2>
+  </div>
+</DocumentFragment>
 `;

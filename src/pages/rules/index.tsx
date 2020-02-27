@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import actionCreators from '../../store/actions';
 
-const Rules: React.FunctionComponent = (props: any) => {
+export const Rules: React.FunctionComponent = (props: any) => {
   const { stateA, stateB, actionCreatorA, asyncActionCreatorB } = props;
   const buttonAction2 = () => {
     // can do more thing

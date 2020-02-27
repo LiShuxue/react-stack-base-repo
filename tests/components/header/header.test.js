@@ -1,17 +1,15 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import Header from 'components/header';
 
 test('should render Header component correctly', () => {
-  const testRenderer = renderer.create(
+  const { asFragment } = render(
     <BrowserRouter>
       <Header />
     </BrowserRouter>
   );
-  const dom = testRenderer.toJSON();
-  expect(dom).toMatchSnapshot();
+  expect(asFragment()).toMatchSnapshot();
 });
 
 test('should have "Trade Query", "Exceptions", "Rules" link', () => {

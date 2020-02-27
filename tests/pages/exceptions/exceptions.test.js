@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import renderer from 'react-test-renderer';
 import Exceptions from 'src/pages/exceptions';
 import { testGetMethod, testPostMethod } from 'src/http/api';
 
@@ -10,9 +9,8 @@ jest.mock('src/http/api', () => ({
 }));
 
 test('should render Exceptions page correctly', () => {
-  const testRenderer = renderer.create(<Exceptions />);
-  const dom = testRenderer.toJSON();
-  expect(dom).toMatchSnapshot();
+  const { asFragment } = render(<Exceptions />);
+  expect(asFragment()).toMatchSnapshot();
 });
 
 test('should have "testGetApi", "testPostApi" button', () => {
