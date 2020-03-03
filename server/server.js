@@ -3,6 +3,7 @@ const bodyParser = require('koa-bodyparser');
 const http = require('http');
 const cors = require('koa2-cors');
 const socketio = require('socket.io');
+const koaStatic = require('koa-static');
 
 // require all the mock data
 const router = require('./mockdata/index');
@@ -20,6 +21,13 @@ app.use(
 app.use(bodyParser());
 app.use(router.routes());
 app.use(router.allowedMethods());
+
+// serve build file
+app.use(
+  koaStatic(__dirname + '/build', {
+    maxage: 1000 * 60 * 60 * 24 * 7
+  })
+);
 
 // Koa integrate with socket.io, so this mock server will have websocket function
 const server = http.createServer(app.callback());
