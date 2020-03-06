@@ -7,3 +7,6 @@
 
 # test
 /coverage/
+
+/server/build/
+/server/node_modules/
