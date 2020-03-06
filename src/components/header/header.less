@@ -1,12 +1,10 @@
 // use nesting style , or it will be global class
-@import '../../styles/common/color.less';
-
 .header {
   display: flex;
   align-items: center;
   padding: 0 20px;
   width: 100%;
-  border-bottom: 5px solid @color-header-border;
+  border-bottom: 5px solid var(--theme-color-header-border);
   box-sizing: border-box;
 
   .header-nav {
@@ -16,14 +14,14 @@
       height: 43px;
       line-height: 45px;
       padding: 0 10px;
-      color: @color-header-font;
+      color: var(--theme-color-header-font);
       font-size: 12px;
       text-decoration: none;
       &:hover {
-        color: @color-header-font-hover;
+        color: var(--theme-color-header-font-hover);
       }
       &.active {
-        background: @color-header-active-bg;
+        background: var(--theme-color-header-active-bg);
       }
     }
   }

@@ -42,7 +42,7 @@ const TradeQuery: React.FunctionComponent = () => {
     <div>
       <h1>TradeQuery</h1>
       <hr />
-      {/* button style already be override by styles/override-antd.less */}
+      {/* button style already be override by styles/override/override-antd.less */}
       <Button>default Button</Button>
       <br />
       <br />

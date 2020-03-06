@@ -4,21 +4,19 @@
  * More detail about customize theme, please see: https://ant.design/docs/react/customize-theme
  */
 
-@import './common/color.less';
-
 // body
-@body-background: @color-body-background;
+@body-background: var(--theme-color-body-background);
 
 // Buttons
 @btn-border-radius-base: 2px;
 @btn-border-width: 1px;
 
-@btn-default-color: @color-white;
-@btn-default-bg: @color-transparent;
-@btn-default-border: @color-btn-border;
+@btn-default-color: var(--theme-color-btn-default);
+@btn-default-bg: var(--theme-color-transparent);
+@btn-default-border: var(--theme-color-btn-border);
 
-@btn-disable-color: @color-btn-disabled;
-@btn-disable-bg: @color-transparent;
-@btn-disable-border: @color-btn-disabled-border;
+@btn-disable-color: var(--theme-color-btn-disabled);
+@btn-disable-bg: var(--theme-color-transparent);
+@btn-disable-border: var(--theme-color-btn-disabled-border);
 
 @btn-height-base: 25px;
