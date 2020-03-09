@@ -35,6 +35,12 @@ exports[`click "Exceptions" link should show "Exceptions" page 1`] = `
         >
           Rules
         </a>
+        <button>
+          dark theme
+        </button>
+        <button>
+          light theme
+        </button>
       </div>
     </div>
     <div>
@@ -99,6 +105,12 @@ exports[`click "Rules" link should show "Rules" page 1`] = `
         >
           Rules
         </a>
+        <button>
+          dark theme
+        </button>
+        <button>
+          light theme
+        </button>
       </div>
     </div>
     <div>
@@ -161,6 +173,12 @@ exports[`click "Trade Query" link should show "Trade Query" page 1`] = `
         >
           Rules
         </a>
+        <button>
+          dark theme
+        </button>
+        <button>
+          light theme
+        </button>
       </div>
     </div>
     <div>
@@ -1040,6 +1058,12 @@ exports[`should render App correctly 1`] = `
         >
           Rules
         </a>
+        <button>
+          dark theme
+        </button>
+        <button>
+          light theme
+        </button>
       </div>
     </div>
     <div>

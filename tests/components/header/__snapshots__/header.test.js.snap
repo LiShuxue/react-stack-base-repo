@@ -31,6 +31,12 @@ exports[`should render Header component correctly 1`] = `
       >
         Rules
       </a>
+      <button>
+        dark theme
+      </button>
+      <button>
+        light theme
+      </button>
     </div>
   </div>
 </DocumentFragment>
