@@ -6,7 +6,7 @@ import './App.less';
 import TradeQuery from './pages/tradeQuery';
 import Exceptions from './pages/exceptions';
 import Rules from 'src/pages/rules';
-import Header from 'components/header';
+import Header from 'components/Header';
 
 const App: React.FunctionComponent = () => {
   return (
