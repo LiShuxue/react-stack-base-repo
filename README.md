@@ -156,6 +156,19 @@ We already defined the folder structure and some sample code about how to use it
   };
   ```
 
+- ### useSelector
+  We using this hook to get state, which provide by latest `react-reux`
+  ```js
+  const stateA = useSelector((state: any) => state.stateA);
+  const stateB = useSelector((state: any) => state.stateB);
+  ```
+- ### useDispatch
+  We using this hook to dispatch action, which provide by latest `react-reux`
+  ```js
+  const dispatch = useDispatch();
+  dispatch(actionCreatorA('changed'));
+  ```
+
 ### 5. [webpack](https://webpack.github.io/)
 
 This project create by "create-react-app", we already eject the default config, and we also config some useful thing to let development more smooth and production performance more better. and you can also config yourself thing in `config/webpack.config.js` and `config/webpackDevServer.config.js`
