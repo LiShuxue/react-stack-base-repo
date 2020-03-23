@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header component correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="header"
+  >
+    <img
+      alt="Ratan One"
+      class="header-icon"
+      src="logo.png"
+    />
+    <div
+      class="header-nav"
+    >
+      <a
+        class="link"
+        href="/query"
+      >
+        Trade Query
+      </a>
+      <a
+        class="link"
+        href="/exceptions"
+      >
+        Exceptions
+      </a>
+      <a
+        class="link"
+        href="/rules"
+      >
+        Rules
+      </a>
+      <button>
+        dark theme
+      </button>
+      <button>
+        light theme
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
