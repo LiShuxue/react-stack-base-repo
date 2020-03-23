@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header component correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="header"
+  >
+    <img
+      alt="logo"
+      class="header-icon"
+      src="logo.png"
+    />
+    <div
+      class="header-nav"
+    >
+      <a
+        class="link"
+        href="/page1"
+      >
+        page1
+      </a>
+      <a
+        class="link"
+        href="/page2"
+      >
+        page2
+      </a>
+      <a
+        class="link"
+        href="/page3"
+      >
+        page3
+      </a>
+      <button
+        style="background: transparent;"
+      >
+        dark theme
+      </button>
+      <button
+        style="background: transparent;"
+      >
+        light theme
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

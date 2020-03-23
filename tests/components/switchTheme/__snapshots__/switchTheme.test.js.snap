@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render SwitchTheme component correctly 1`] = `
+<DocumentFragment>
+  <button
+    style="background: transparent;"
+  >
+    dark theme
+  </button>
+  <button
+    style="background: transparent;"
+  >
+    light theme
+  </button>
+</DocumentFragment>
+`;
