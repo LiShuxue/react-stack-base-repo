@@ -1,8 +1,8 @@
 import * as types from '../actionTypes';
 
-export const reducerA = (state: string = 'this is init A', action: ActionType) => {
+export const switchTheme = (state: string = 'dark', action: ActionType) => {
   switch (action.type) {
-    case types.ACTION_TYPE_A:
+    case types.SWITCH_THEME:
       return action.data;
     default:
       return state;

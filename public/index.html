@@ -3,11 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="description" content="ratan-rt-gui" />
-    <title>Ratan One</title>
+    <meta name="description" content="react-stack-base-repo" />
+    <title>React Stack</title>
+    <script>
+      window.onload = () => {
+        document.getElementById('root').classList.remove('root-loading');
+      };
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root" class="root-loading"></div>
   </body>
 </html>

@@ -7,7 +7,7 @@ const koaStatic = require('koa-static');
 
 // require all the mock data
 const router = require('./mockdata/index');
-const tradedata = require('./mockdata/socket/trade');
+const socketData = require('./mockdata/socket');
 
 // Koa part, use koa to start the mock server
 const app = new Koa();
@@ -39,8 +39,8 @@ socketServer.on('connection', client => {
 
   // push data to client, every 60s
   setInterval(() => {
-    let trade = tradedata();
-    client.emit('message', trade);
+    let data = socketData();
+    client.emit('message', data);
   }, 20 * 1000);
 
   // listen the client disconnect

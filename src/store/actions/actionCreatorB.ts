@@ -2,21 +2,16 @@ import * as types from '../actionTypes';
 import { Dispatch } from 'redux';
 import { testGetMethod } from 'src/http/api';
 
-export interface InterfaceActionB {
-  type: string;
-  text: string;
-}
-
 const requestSuccess = () => {
   return {
     type: types.REQUEST_SUCCESS,
-    text: 'request success'
+    data: 'request success'
   };
 };
 const requestFailed = () => {
   return {
     type: types.REQUEST_FAILED,
-    text: 'request failed'
+    data: 'request failed'
   };
 };
 

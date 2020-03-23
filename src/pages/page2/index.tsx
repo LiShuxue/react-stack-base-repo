@@ -1,7 +1,8 @@
 import React from 'react';
+import { Button } from 'antd';
 import { testGetMethod, testPostMethod } from 'src/http/api';
 
-const Exceptions: React.FunctionComponent = () => {
+const Page2: React.FC = () => {
   const testGetApi = () => {
     testGetMethod().then(response => {
       console.log(response);
@@ -16,10 +17,10 @@ const Exceptions: React.FunctionComponent = () => {
   };
   return (
     <div>
-      <h1>Exceptions</h1>
+      <h1>page 2</h1>
       <hr />
-      <button onClick={testGetApi}>testGetApi</button> <br />
-      <button onClick={testPostApi}>testPostApi</button> <br />
+      <Button onClick={testGetApi}>testGetApi</Button> <br />
+      <Button onClick={testPostApi}>testPostApi</Button> <br />
       <h2>Open Chrome developer tool to inspect your request, and you can also see the response in the console</h2>
       <br />
       <h2>About websocket relative, wait 20s, server will push data and we will show it in console</h2>
@@ -27,4 +28,4 @@ const Exceptions: React.FunctionComponent = () => {
   );
 };
 
-export default Exceptions;
+export default Page2;

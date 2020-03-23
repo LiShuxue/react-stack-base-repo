@@ -9,6 +9,11 @@ declare namespace NodeJS {
   }
 }
 
+declare interface ActionType {
+  type: string;
+  data: any;
+}
+
 declare module '*.bmp' {
   const src: string;
   export default src;

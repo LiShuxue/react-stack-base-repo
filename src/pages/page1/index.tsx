@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Button } from 'antd';
+import cn from 'classnames';
+import { useSelector } from 'react-redux';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
-import 'ag-grid-community/dist/styles/ag-theme-balham-dark.css';
 // import 'ag-grid-enterprise';
 
-const TradeQuery: React.FunctionComponent = () => {
+const Page1: React.FC = () => {
   const [columnDefs] = useState([
     {
       headerName: 'Make',
@@ -38,22 +39,26 @@ const TradeQuery: React.FunctionComponent = () => {
     }
   ]);
 
+  const theme = useSelector((state: any) => state.theme);
+  const agClassName = cn({ 'ag-theme-balham': theme === 'light' }, { 'ag-theme-balham-dark': theme === 'dark' });
+
   return (
     <div>
-      <h1>TradeQuery</h1>
+      <h1>page 1</h1>
       <hr />
       {/* button style already be override by styles/override/override-antd.less */}
       <Button>default Button</Button>
       <br />
-      <br />
       <Button disabled>disabled Button</Button>
+      <br />
+      <Button type="primary">primary Button</Button>
       <hr />
-      {/* ag-grid works well */}
-      <div className="ag-theme-balham-dark" style={{ height: '150px', width: '650px' }} data-testid="datalist">
+      {/* ag-grid */}
+      <div className={agClassName} style={{ height: '150px', width: '650px' }} data-testid="datalist">
         <AgGridReact columnDefs={columnDefs} rowData={rowData} />
       </div>
     </div>
   );
 };
 
-export default TradeQuery;
+export default Page1;

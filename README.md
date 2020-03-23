@@ -54,16 +54,16 @@ now we are using latest `react-router` v5.
 
 <BrowserRouter>
   <Switch>
-    <Route exact path="/query">
-      <TradeQuery />
+    <Route exact path="/page1">
+      <Page1 />
     </Route>
-    <Route exact path="/exceptions">
-      <Exceptions />
+    <Route exact path="/page2">
+      <Page2 />
     </Route>
-    <Route exact path="/rules">
-      <Rules />
+    <Route exact path="/page3">
+      <Page3 />
     </Route>
-    <Redirect to="/query" />
+    <Redirect to="/page1" />
   </Switch>
 </BrowserRouter>
 

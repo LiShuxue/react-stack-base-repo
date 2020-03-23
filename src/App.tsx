@@ -3,9 +3,9 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import './App.less';
 
-import TradeQuery from './pages/tradeQuery';
-import Exceptions from './pages/exceptions';
-import Rules from 'src/pages/rules';
+import Page1 from './pages/page1';
+import Page2 from './pages/page2';
+import Page3 from 'src/pages/page3';
 import Header from 'components/Header';
 
 const App: React.FunctionComponent = () => {
@@ -14,20 +14,16 @@ const App: React.FunctionComponent = () => {
       <BrowserRouter>
         <Header />
         <Switch>
-          {/* This code styling is Router-v5 recommand.
-              If want use such as location, history object, you can use Router-v5 hook api.
-              It is helpful for reduce code and nesting route. 
-          */}
-          <Route exact path="/query">
-            <TradeQuery />
+          <Route exact path="/page1">
+            <Page1 />
           </Route>
-          <Route exact path="/exceptions">
-            <Exceptions />
+          <Route exact path="/page2">
+            <Page2 />
           </Route>
-          <Route exact path="/rules">
-            <Rules />
+          <Route exact path="/page3">
+            <Page3 />
           </Route>
-          <Redirect to="/query" />
+          <Redirect to="/page1" />
         </Switch>
       </BrowserRouter>
     </div>

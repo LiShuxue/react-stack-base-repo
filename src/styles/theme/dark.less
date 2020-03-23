@@ -3,18 +3,42 @@
 // Those color value can use some base color, also can use yourself value.
 
 :root {
-  // html body
+  // Base
+  --theme-color-font-color: var(--base-color-white);
   --theme-color-body-background: var(--base-color-grey-dark);
+  --theme-color-component-background: var(--base-color-grey-xdark);
+
   // header
+  --theme-color-header-bg: transparent;
   --theme-color-header-border: var(--base-color-black);
   --theme-color-header-font: var(--base-color-grey-light);
   --theme-color-header-font-hover: var(--base-color-grey-xlight);
   --theme-color-header-active-bg: var(--base-color-black);
+
   // button
-  --theme-color-btn-default: var(--base-color-white);
   --theme-color-btn-border: var(--base-color-blue);
-  --theme-color-btn-disabled: var(--base-color-grey);
+  --theme-color-btn-bg: transparent;
+  --theme-color-btn-hover-border: var(--base-color-white);
+  --theme-color-btn-disabled-font: var(--base-color-grey);
   --theme-color-btn-disabled-border: var(--base-color-grey-xdark);
-  // other
-  --theme-color-transparent: var(--base-color-transparent);
+  --theme-color-btn-disabled-bg: transparent;
+  --theme-color-btn-primary-font: var(--base-color-white);
+  --theme-color-btn-primary-border: var(--base-color-blue);
+  --theme-color-btn-primary-bg: var(--base-color-blue-grey);
+}
+
+body {
+  color: var(--theme-color-font-color);
+}
+
+// Button
+.ant-btn {
+  &:hover,
+  &:focus {
+    color: var(--base-color-white);
+    border-color: var(--base-color-white);
+  }
+}
+.ant-btn-primary:hover {
+  background-color: var(--base-color-blue-opacity-55);
 }

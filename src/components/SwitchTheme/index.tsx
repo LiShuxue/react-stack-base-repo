@@ -1,17 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
+import { switchTheme } from 'src/store/actions';
 
 const SwitchTheme: React.FC = () => {
-  const [theme, setTheme] = useState('');
+  const theme = useSelector((state: any) => state.theme);
+  const dispatch = useDispatch();
 
   const changeToDark = () => {
     import(/* webpackChunkName: 'theme-dark' */ 'src/styles/theme/dark.less');
-    setTheme('dark');
-    localStorage.setItem('ratan-theme', 'dark');
+    import(/* webpackChunkName: 'ag-grid-theme-dark' */ 'ag-grid-community/dist/styles/ag-theme-balham-dark.css');
+    dispatch(switchTheme('dark'));
+    localStorage.setItem('theme', 'dark');
   };
   const changeToLight = () => {
     import(/* webpackChunkName: 'theme-light' */ 'src/styles/theme/light.less');
-    setTheme('light');
-    localStorage.setItem('ratan-theme', 'light');
+    import(/* webpackChunkName: 'ag-grid-theme-light' */ 'ag-grid-community/dist/styles/ag-theme-balham.css');
+    dispatch(switchTheme('light'));
+    localStorage.setItem('theme', 'light');
   };
 
   const hasDarkThemeFile = () => {
@@ -57,9 +63,9 @@ const SwitchTheme: React.FC = () => {
   }, [theme]);
 
   useEffect(() => {
-    if (localStorage.getItem('ratan-theme') === 'dark') {
+    if (localStorage.getItem('theme') === 'dark') {
       changeToDark();
-    } else if (localStorage.getItem('ratan-theme') === 'light') {
+    } else if (localStorage.getItem('theme') === 'light') {
       changeToLight();
     } else {
       changeToDark();

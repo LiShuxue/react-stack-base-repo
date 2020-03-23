@@ -1,5 +1,4 @@
 import axios from 'axios';
-import mockServiceList from './mockServiceConfig';
 
 const instance = axios.create({
   baseURL: process.env.REACT_APP_API_URL
@@ -10,9 +9,6 @@ instance.defaults.headers.post['Content-Type'] = 'application/json; charset=utf-
 // need to config detail interceptor
 instance.interceptors.request.use(
   config => {
-    if (mockServiceList.includes(`${config.url}`)) {
-      config.url = `${process.env.REACT_APP_API_URL_MOCK}${config.url}`;
-    }
     return config;
   },
   error => {

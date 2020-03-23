@@ -1,12 +1,11 @@
 import * as types from '../actionTypes';
-import { InterfaceActionB } from '../actions/actionCreatorB';
 
-export const reducerB = (state: string = 'this is init B', action: InterfaceActionB) => {
+export const reducerB = (state: string = 'this is init B', action: ActionType) => {
   switch (action.type) {
     case types.REQUEST_SUCCESS:
-      return action.text;
+      return action.data;
     case types.REQUEST_FAILED:
-      return action.text;
+      return action.data;
     default:
       return state;
   }
