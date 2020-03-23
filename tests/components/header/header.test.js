@@ -2,56 +2,64 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import Header from 'components/header';
+import { Provider } from 'react-redux';
+import store from 'src/store';
 
 test('should render Header component correctly', () => {
   const { asFragment } = render(
-    <BrowserRouter>
-      <Header />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>
+    </Provider>
   );
   expect(asFragment()).toMatchSnapshot();
 });
 
-test('should have "Trade Query", "Exceptions", "Rules" link', () => {
+test('should have "page1", "page2", "page3" link', () => {
   const { getByText } = render(
-    <BrowserRouter>
-      <Header />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>
+    </Provider>
   );
 
   expect.assertions(6);
 
-  const tradeQuery = getByText('Trade Query');
-  expect(tradeQuery).toBeInTheDocument();
-  expect(tradeQuery).toHaveClass('link');
+  const page1 = getByText('page1');
+  expect(page1).toBeInTheDocument();
+  expect(page1).toHaveClass('link');
 
-  const exceptions = getByText('Exceptions');
-  expect(exceptions).toBeInTheDocument();
-  expect(exceptions).toHaveClass('link');
+  const page2 = getByText('page2');
+  expect(page2).toBeInTheDocument();
+  expect(page2).toHaveClass('link');
 
-  const rules = getByText('Rules');
-  expect(rules).toBeInTheDocument();
-  expect(rules).toHaveClass('link');
+  const page3 = getByText('page3');
+  expect(page3).toBeInTheDocument();
+  expect(page3).toHaveClass('link');
 });
 
 test('if link be choose, should have active class', () => {
   const { getByText } = render(
-    <BrowserRouter>
-      <Header />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>
+    </Provider>
   );
 
   expect.assertions(3);
 
-  const tradeQuery = getByText('Trade Query');
-  fireEvent.click(tradeQuery);
-  expect(tradeQuery).toHaveClass('active');
+  const page1 = getByText('page1');
+  fireEvent.click(page1);
+  expect(page1).toHaveClass('active');
 
-  const exceptions = getByText('Exceptions');
-  fireEvent.click(exceptions);
-  expect(exceptions).toHaveClass('active');
+  const page2 = getByText('page2');
+  fireEvent.click(page2);
+  expect(page2).toHaveClass('active');
 
-  const rules = getByText('Rules');
-  fireEvent.click(rules);
-  expect(rules).toHaveClass('active');
+  const page3 = getByText('page3');
+  fireEvent.click(page3);
+  expect(page3).toHaveClass('active');
 });

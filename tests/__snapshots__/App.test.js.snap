@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`click "Exceptions" link should show "Exceptions" page 1`] = `
+exports[`click "page1" link should show "page1" page 1`] = `
 <DocumentFragment>
   <div
     class="App"
@@ -9,145 +9,7 @@ exports[`click "Exceptions" link should show "Exceptions" page 1`] = `
       class="header"
     >
       <img
-        alt="Ratan One"
-        class="header-icon"
-        src="logo.png"
-      />
-      <div
-        class="header-nav"
-      >
-        <a
-          class="link"
-          href="/query"
-        >
-          Trade Query
-        </a>
-        <a
-          aria-current="page"
-          class="link active"
-          href="/exceptions"
-        >
-          Exceptions
-        </a>
-        <a
-          class="link"
-          href="/rules"
-        >
-          Rules
-        </a>
-        <button>
-          dark theme
-        </button>
-        <button>
-          light theme
-        </button>
-      </div>
-    </div>
-    <div>
-      <h1>
-        Exceptions
-      </h1>
-      <hr />
-      <button>
-        testGetApi
-      </button>
-       
-      <br />
-      <button>
-        testPostApi
-      </button>
-       
-      <br />
-      <h2>
-        Open Chrome developer tool to inspect your request, and you can also see the response in the console
-      </h2>
-      <br />
-      <h2>
-        About websocket relative, wait 20s, server will push data and we will show it in console
-      </h2>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`click "Rules" link should show "Rules" page 1`] = `
-<DocumentFragment>
-  <div
-    class="App"
-  >
-    <div
-      class="header"
-    >
-      <img
-        alt="Ratan One"
-        class="header-icon"
-        src="logo.png"
-      />
-      <div
-        class="header-nav"
-      >
-        <a
-          class="link"
-          href="/query"
-        >
-          Trade Query
-        </a>
-        <a
-          class="link"
-          href="/exceptions"
-        >
-          Exceptions
-        </a>
-        <a
-          aria-current="page"
-          class="link active"
-          href="/rules"
-        >
-          Rules
-        </a>
-        <button>
-          dark theme
-        </button>
-        <button>
-          light theme
-        </button>
-      </div>
-    </div>
-    <div>
-      <h1>
-        Rules
-      </h1>
-      <hr />
-      <button>
-        click this button to change the stateA
-      </button>
-      <br />
-      <h1>
-        stateA: this is preload stateA
-      </h1>
-      <br />
-      <button>
-        click this button to async change the stateB
-      </button>
-      <br />
-      <h1>
-        stateB: this is preload stateB
-      </h1>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`click "Trade Query" link should show "Trade Query" page 1`] = `
-<DocumentFragment>
-  <div
-    class="App"
-  >
-    <div
-      class="header"
-    >
-      <img
-        alt="Ratan One"
+        alt="logo"
         class="header-icon"
         src="logo.png"
       />
@@ -157,33 +19,37 @@ exports[`click "Trade Query" link should show "Trade Query" page 1`] = `
         <a
           aria-current="page"
           class="link active"
-          href="/query"
+          href="/page1"
         >
-          Trade Query
+          page1
         </a>
         <a
           class="link"
-          href="/exceptions"
+          href="/page2"
         >
-          Exceptions
+          page2
         </a>
         <a
           class="link"
-          href="/rules"
+          href="/page3"
         >
-          Rules
+          page3
         </a>
-        <button>
+        <button
+          style="background: transparent;"
+        >
           dark theme
         </button>
-        <button>
+        <button
+          style="background: transparent;"
+        >
           light theme
         </button>
       </div>
     </div>
     <div>
       <h1>
-        TradeQuery
+        page 1
       </h1>
       <hr />
       <button
@@ -195,7 +61,6 @@ exports[`click "Trade Query" link should show "Trade Query" page 1`] = `
         </span>
       </button>
       <br />
-      <br />
       <button
         class="ant-btn"
         disabled=""
@@ -203,6 +68,15 @@ exports[`click "Trade Query" link should show "Trade Query" page 1`] = `
       >
         <span>
           disabled Button
+        </span>
+      </button>
+      <br />
+      <button
+        class="ant-btn ant-btn-primary"
+        type="button"
+      >
+        <span>
+          primary Button
         </span>
       </button>
       <hr />
@@ -1023,6 +897,172 @@ exports[`click "Trade Query" link should show "Trade Query" page 1`] = `
 </DocumentFragment>
 `;
 
+exports[`click "page2" link should show "page2" page 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="header"
+    >
+      <img
+        alt="logo"
+        class="header-icon"
+        src="logo.png"
+      />
+      <div
+        class="header-nav"
+      >
+        <a
+          class="link"
+          href="/page1"
+        >
+          page1
+        </a>
+        <a
+          aria-current="page"
+          class="link active"
+          href="/page2"
+        >
+          page2
+        </a>
+        <a
+          class="link"
+          href="/page3"
+        >
+          page3
+        </a>
+        <button
+          style="background: transparent;"
+        >
+          dark theme
+        </button>
+        <button
+          style="background: transparent;"
+        >
+          light theme
+        </button>
+      </div>
+    </div>
+    <div>
+      <h1>
+        page 2
+      </h1>
+      <hr />
+      <button
+        class="ant-btn"
+        type="button"
+      >
+        <span>
+          testGetApi
+        </span>
+      </button>
+       
+      <br />
+      <button
+        class="ant-btn"
+        type="button"
+      >
+        <span>
+          testPostApi
+        </span>
+      </button>
+       
+      <br />
+      <h2>
+        Open Chrome developer tool to inspect your request, and you can also see the response in the console
+      </h2>
+      <br />
+      <h2>
+        About websocket relative, wait 20s, server will push data and we will show it in console
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`click "page3" link should show "page3" page 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="header"
+    >
+      <img
+        alt="logo"
+        class="header-icon"
+        src="logo.png"
+      />
+      <div
+        class="header-nav"
+      >
+        <a
+          class="link"
+          href="/page1"
+        >
+          page1
+        </a>
+        <a
+          class="link"
+          href="/page2"
+        >
+          page2
+        </a>
+        <a
+          aria-current="page"
+          class="link active"
+          href="/page3"
+        >
+          page3
+        </a>
+        <button
+          style="background: transparent;"
+        >
+          dark theme
+        </button>
+        <button
+          style="background: transparent;"
+        >
+          light theme
+        </button>
+      </div>
+    </div>
+    <div>
+      <h1>
+        page 3
+      </h1>
+      <hr />
+      <button
+        class="ant-btn"
+        type="button"
+      >
+        <span>
+          click this button to change the stateA
+        </span>
+      </button>
+      <br />
+      <h1>
+        stateA: this is preload stateA
+      </h1>
+      <br />
+      <button
+        class="ant-btn"
+        type="button"
+      >
+        <span>
+          click this button to async change the stateB
+        </span>
+      </button>
+      <br />
+      <h1>
+        stateB: this is preload stateB
+      </h1>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`should render App correctly 1`] = `
 <DocumentFragment>
   <div
@@ -1032,7 +1072,7 @@ exports[`should render App correctly 1`] = `
       class="header"
     >
       <img
-        alt="Ratan One"
+        alt="logo"
         class="header-icon"
         src="logo.png"
       />
@@ -1042,33 +1082,37 @@ exports[`should render App correctly 1`] = `
         <a
           aria-current="page"
           class="link active"
-          href="/query"
+          href="/page1"
         >
-          Trade Query
+          page1
         </a>
         <a
           class="link"
-          href="/exceptions"
+          href="/page2"
         >
-          Exceptions
+          page2
         </a>
         <a
           class="link"
-          href="/rules"
+          href="/page3"
         >
-          Rules
+          page3
         </a>
-        <button>
+        <button
+          style="background: transparent;"
+        >
           dark theme
         </button>
-        <button>
+        <button
+          style="background: transparent;"
+        >
           light theme
         </button>
       </div>
     </div>
     <div>
       <h1>
-        TradeQuery
+        page 1
       </h1>
       <hr />
       <button
@@ -1080,7 +1124,6 @@ exports[`should render App correctly 1`] = `
         </span>
       </button>
       <br />
-      <br />
       <button
         class="ant-btn"
         disabled=""
@@ -1088,6 +1131,15 @@ exports[`should render App correctly 1`] = `
       >
         <span>
           disabled Button
+        </span>
+      </button>
+      <br />
+      <button
+        class="ant-btn ant-btn-primary"
+        type="button"
+      >
+        <span>
+          primary Button
         </span>
       </button>
       <hr />

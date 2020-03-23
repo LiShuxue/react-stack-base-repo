@@ -11,7 +11,7 @@ test('should handle "REQUEST_SUCCESS"', () => {
   const expectResult = 'expect success state';
   const action = {
     type: types.REQUEST_SUCCESS,
-    text: expectResult
+    data: expectResult
   };
   const state = reducerB(undefined, action);
   expect(state).toEqual(expectResult);
@@ -21,7 +21,7 @@ test('should handle "REQUEST_FAILED"', () => {
   const expectResult = 'expect failed state';
   const action = {
     type: types.REQUEST_FAILED,
-    text: expectResult
+    data: expectResult
   };
   const state = reducerB(undefined, action);
   expect(state).toEqual(expectResult);

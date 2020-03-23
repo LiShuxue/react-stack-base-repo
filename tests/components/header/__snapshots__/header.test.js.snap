@@ -6,7 +6,7 @@ exports[`should render Header component correctly 1`] = `
     class="header"
   >
     <img
-      alt="Ratan One"
+      alt="logo"
       class="header-icon"
       src="logo.png"
     />
@@ -15,26 +15,30 @@ exports[`should render Header component correctly 1`] = `
     >
       <a
         class="link"
-        href="/query"
+        href="/page1"
       >
-        Trade Query
+        page1
       </a>
       <a
         class="link"
-        href="/exceptions"
+        href="/page2"
       >
-        Exceptions
+        page2
       </a>
       <a
         class="link"
-        href="/rules"
+        href="/page3"
       >
-        Rules
+        page3
       </a>
-      <button>
+      <button
+        style="background: transparent;"
+      >
         dark theme
       </button>
-      <button>
+      <button
+        style="background: transparent;"
+      >
         light theme
       </button>
     </div>

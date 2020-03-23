@@ -11,7 +11,7 @@ test('should handle "ACTION_TYPE_A"', () => {
   const expectResult = 'expect state';
   const action = {
     type: types.ACTION_TYPE_A,
-    text: expectResult
+    data: expectResult
   };
   const state = reducerA(undefined, action);
   expect(state).toEqual(expectResult);

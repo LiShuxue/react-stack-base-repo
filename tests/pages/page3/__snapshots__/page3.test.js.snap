@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render page correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      page 3
+    </h1>
+    <hr />
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        click this button to change the stateA
+      </span>
+    </button>
+    <br />
+    <h1>
+      stateA: this is preload stateA
+    </h1>
+    <br />
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        click this button to async change the stateB
+      </span>
+    </button>
+    <br />
+    <h1>
+      stateB: this is preload stateB
+    </h1>
+  </div>
+</DocumentFragment>
+`;

@@ -17,11 +17,11 @@ test('test async action, should return success action when request success, and 
   const expectedActions = [
     {
       type: types.REQUEST_SUCCESS,
-      text: 'request success'
+      data: 'request success'
     },
     {
       type: types.REQUEST_FAILED,
-      text: 'request failed'
+      data: 'request failed'
     }
   ];
 

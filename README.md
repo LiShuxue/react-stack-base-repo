@@ -288,7 +288,7 @@ import xxx from 'component/xxx.ts';
 
 ### 19. switch theme
 
-By default, we support two theme, dark & light, you can dynamic change theme without reload page. the component is `components/SwitchTheme/index.ts`.
+By default, we support two theme, dark & light, you can dynamic change theme without reload page. the component is `components/switchTheme/index.ts`.
 
 - ### styles/common/color.less
 

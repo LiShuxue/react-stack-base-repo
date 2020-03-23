@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render TradeQuery page correctly 1`] = `
+exports[`should render page1 correctly 1`] = `
 <DocumentFragment>
   <div>
     <h1>
-      TradeQuery
+      page 1
     </h1>
     <hr />
     <button
@@ -16,7 +16,6 @@ exports[`should render TradeQuery page correctly 1`] = `
       </span>
     </button>
     <br />
-    <br />
     <button
       class="ant-btn"
       disabled=""
@@ -24,6 +23,15 @@ exports[`should render TradeQuery page correctly 1`] = `
     >
       <span>
         disabled Button
+      </span>
+    </button>
+    <br />
+    <button
+      class="ant-btn ant-btn-primary"
+      type="button"
+    >
+      <span>
+        primary Button
       </span>
     </button>
     <hr />

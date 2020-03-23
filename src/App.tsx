@@ -6,7 +6,7 @@ import './App.less';
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
 import Page3 from 'src/pages/page3';
-import Header from 'components/Header';
+import Header from 'components/header';
 
 const App: React.FunctionComponent = () => {
   return (

@@ -1,19 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Exceptions page correctly 1`] = `
+exports[`should render page correctly 1`] = `
 <DocumentFragment>
   <div>
     <h1>
-      Exceptions
+      page 2
     </h1>
     <hr />
-    <button>
-      testGetApi
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        testGetApi
+      </span>
     </button>
      
     <br />
-    <button>
-      testPostApi
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        testPostApi
+      </span>
     </button>
      
     <br />

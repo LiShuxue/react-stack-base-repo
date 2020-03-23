@@ -1,14 +1,23 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import TradeQuery from 'src/pages/tradeQuery';
+import Page1 from 'src/pages/page1';
 
-test('should render TradeQuery page correctly', () => {
-  const { asFragment } = render(<TradeQuery />);
+jest.mock('react-redux', () => {
+  const useSelector = jest.fn();
+  useSelector.mockImplementationOnce(() => 'dark');
+
+  return {
+    useSelector
+  };
+});
+
+test('should render page1 correctly', () => {
+  const { asFragment } = render(<Page1 />);
   expect(asFragment()).toMatchSnapshot();
 });
 
 test('should have "default button" and "disabled button"', () => {
-  const { getByText } = render(<TradeQuery />);
+  const { getByText } = render(<Page1 />);
 
   expect.assertions(2);
 
@@ -20,7 +29,7 @@ test('should have "default button" and "disabled button"', () => {
 });
 
 test('should have a datalist', () => {
-  const { getByTestId } = render(<TradeQuery />);
+  const { getByTestId } = render(<Page1 />);
   const datalist = getByTestId('datalist');
   expect(datalist).toBeInTheDocument();
 });
